@@ -99,11 +99,18 @@ main img {
 .pimentaimagens {
         background-image: linear-gradient(lemonchiffon, #dd371a);
         display: list-item;
-        justify-content: space-around;
+        justify-content: end;
         align-items: center;
         padding: 24px 0;
 }
 
 h5 {
     color: #5e1616;
+    font-size: 40px;
+    font-style: oblique;
+}
+
+.fotospimenta {
+    width: 100px;
+    height: 100px;
 }
