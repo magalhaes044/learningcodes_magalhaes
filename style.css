@@ -1,85 +1,100 @@
-body {
-    color: white;
-    background-color: lemonchiffon;
-    background-image: linear-gradient(rgb(224, 229, 183), rgb(150, 9, 9));
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-ul {
-    display: flex;
-    justify-content: space-between;
-    list-style-type: none;
-    align-items: center;
-    padding: 16px;
-}
-
-a {
-    color: white;
-    text-decoration: none;
-}
-
-header img {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    border: 5px solid rgb(150, 9, 9);
-}
-
-.center {
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  h1 {
     text-align: center;
-}
-
-.align {
-        text-align: left;
-}
-
-h1 {
-    color: rgb(150, 9, 9);
-}
-
-h4 {
-    color: #436fb1;
-}
-
-footer img {
-    width: 40px;
-    height: 40px;
-}
-
-footer {
-    display: flex;
-    justify-content: center;
-}
-
-footer a {
-    margin: 20px;
-    text-align: center;
-}
-
-footer p {
-    margin-top: 2px;
-}
-
-.container {
-    padding: 0px 50px;
-}
-
-nav a {
+    margin: 1em 0;
+    font-family: sans-serif;
+  }
+  
+  .container {
+    position: relative;
+    padding: 15px;
+    max-width: 640px;
+    margin: 0 auto;
+  }
+  
+  .gallery-wrapper {
+    overflow-x: auto;
+  }
+  
+  .arrow-left,
+  .arrow-right {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: auto;
+    bottom: 0;
     font-size: 20px;
-}
+    line-height: 250px;
+    width: 40px;
+    color: #fff;
+    transition: all 600ms ease-in-out;
+    background: linear-gradient(to left, transparent 0%, black 200%);
+    opacity: 0.1;
+    cursor: pointer;
+    border: none;
+  }
+  
+  .arrow-left:hover,
+  .arrow-right:hover {
+    opacity: 1;
+  }
+  
+  .arrow-right {
+    right: 0;
+    left: auto;
+    text-align: right;
+    background: linear-gradient(to right, transparent 0%, black 200%);
+  }
+  
+  .gallery {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 15px;
+  }
+  
+  .item {
+    width: 250px;
+    height: 250px;
+    flex-shrink: 0;
+    transition: all 600ms ease-in-out;
+    opacity: 0.5;
+  }
+  
+  .current-item {
+    opacity: 1;
+  }
 
-nav a:hover {
-    color: rgb(150, 9, 9);
-}
-.pimentaimagens {
-        background-image: linear-gradient(rgb(224, 229, 183), rgb(150, 9, 9));
-        display: list-item;
-        justify-content: space-around;
-        align-items: baseline;
-        padding: 24px 0;
-}
-
-.fotospimenta {
-    width: 65px;
-    height: 65px;
-}
+  .gallery-wrapper::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .gallery-wrapper {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  
+  .cyan {
+    background: cyan;
+  }
+  
+  .deeppink {
+    background: deeppink;
+  }
+  
+  .turquoise {
+    background: turquoise;
+  }
+  
+  .darkblue {
+    background: darkblue;
+  }
+  
+  .purple {
+    background: purple;
+  }
+  
