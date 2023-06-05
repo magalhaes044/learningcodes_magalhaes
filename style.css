@@ -91,7 +91,7 @@ button {
 
 .pimentaimagens {
         background-image: linear-gradient(lemonchiffon, #dd371a);
-        display: flex;
+        display: list-item;
         justify-content: space-around;
         align-items: center;
         padding: 24px 0;
