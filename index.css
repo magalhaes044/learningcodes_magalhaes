@@ -22,11 +22,11 @@ header img {
     height: 150px;
     border-radius: 50%;
     border: 5px solid #5BBE42;
+    scale: 1.2;
 }
 
 .center {
     text-align: center;
-    scale: 1.2;
 }
 
 .align {
