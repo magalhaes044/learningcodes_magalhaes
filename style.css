@@ -21,7 +21,7 @@ header img {
     width: 150px;
     height: 150px;
     border-radius: 50%;
-    border: 5px solid rgb(150, 9, 9);
+    border: 5px solid #860101;
 }
 
 .center {
@@ -33,7 +33,7 @@ header img {
 }
 
 h1 {
-    color: rgb(150, 9, 9);
+    color: #6c0d02;
 }
 
 h4 {
@@ -68,13 +68,32 @@ nav a {
 }
 
 nav a:hover {
-    color: rgb(150, 9, 9);
+    color: #c02000;
 }
+
+.contact-form input{
+    width: 100%;
+    padding: 8px 0;
+    margin: 8px 0;
+}
+
+.contact-form input[type=text] {
+    height: 100px;
+}
+
+button {
+    color: black;
+    background-color: white;
+    border: none;
+    width: 100px;
+    height: 30px;
+}
+
 .pimentaimagens {
-        background-image: linear-gradient(rgb(224, 229, 183), rgb(150, 9, 9));
-        display: list-item;
+        background-image: linear-gradient(lemonchiffon, #dd371a);
+        display: flex;
         justify-content: space-around;
-        align-items: baseline;
+        align-items: center;
         padding: 24px 0;
 }
 
