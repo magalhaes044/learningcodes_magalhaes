@@ -8,15 +8,15 @@ body {
 }
 
 .content {
-    height: 520px;
-    width: 935px;
+    height: 260px;
+    width: 462px;
     border-radius: 30px;
     overflow: hidden;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    box-shadow: 5px 5px 0px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 5px 5px 2px 0px rgba(0, 0, 0, 0.71);
 }
 
 .content .slide img {
@@ -53,8 +53,8 @@ input {
 
 .slides {
     display: flex;
-    width: 500%;
-    height: 100%;
+    width: 250%;
+    height: 50%;
 }
 
 .slide {
@@ -76,8 +76,4 @@ input {
 
 #slide4:checked ~ .s1 {
     margin-left: -60%;
-} 
-
-#slide5:checked ~ .s1 {
-    margin-left: -80%;
 } 
