@@ -1,103 +1,83 @@
 body {
-    color: white;
-    background-color: lemonchiffon;
-    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(72deg, #dd371a 35%, #fffacd, #dd371a 99%); ;
 }
 
-ul {
-    display: flex;
-    justify-content: space-between;
-    list-style-type: none;
-    align-items: center;
-    padding: 16px;
+.content {
+    height: 520px;
+    width: 935px;
+    border-radius: 30px;
+    overflow: hidden;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 5px 5px 0px 0px rgba(0, 0, 0, 0.75);
 }
 
-a {
-    color: white;
-    text-decoration: none;
-}
-
-header img {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    border: 5px solid #860101;
-}
-
-.center {
-    text-align: center;
-}
-
-.align {
-        text-align: left;
-}
-
-h1 {
-    color: #6c0d02;
-}
-
-h4 {
-    color: #436fb1;
-}
-
-footer img {
-    width: 40px;
-    height: 40px;
-}
-
-footer {
-    display: flex;
-    justify-content: center;
-}
-
-footer a {
-    margin: 20px;
-    text-align: center;
-}
-
-footer p {
-    margin-top: 2px;
-}
-
-.container {
-    padding: 0px 50px;
-}
-
-nav a {
-    font-size: 20px;
-}
-
-nav a:hover {
-    color: #c02000;
-}
-
-.contact-form input{
+.content .slide img {
+    height: 100%;
     width: 100%;
-    padding: 8px 0;
-    margin: 8px 0;
 }
 
-.contact-form input[type=text] {
-    height: 100px;
+.navigation {
+    position: absolute;
+    bottom: 160px;
+    left: 850px;
+    display: flex;
 }
 
-button {
-    color: black;
+.bar {
+
+    width: 15px;
+    height: 15px;
+    border: 2px solid white;
+    margin: 6px;
+    border-radius: 15px;
+    cursor: pointer;
+    transform: .5s ease;
+
+}
+
+.bar:hover {
     background-color: white;
-    border: none;
-    width: 100px;
-    height: 30px;
 }
 
-.pimentaimagens {
-        background-image: linear-gradient(lemonchiffon, #dd371a);
-        display: list-item;
-        justify-content: space-around;
-        align-items: center;
-        padding: 24px 0;
+input {
+  display: none;
 }
 
-.fotospimenta {
-    width: 65px;
-    height: 65px;
+.slides {
+    display: flex;
+    width: 500%;
+    height: 100%;
 }
+
+.slide {
+    width: 20%;
+    transition: .6s;
+}
+
+#slide1:checked ~ .s1 {
+    margin-left: 0;
+} 
+
+#slide2:checked ~ .s1 {
+    margin-left: -20%;
+} 
+
+#slide3:checked ~ .s1 {
+    margin-left: -40%;
+} 
+
+#slide4:checked ~ .s1 {
+    margin-left: -60%;
+} 
+
+#slide5:checked ~ .s1 {
+    margin-left: -80%;
+} 
