@@ -10,13 +10,13 @@ body {
 .content {
     height: 260px;
     width: 462px;
-    border-radius: 30px;
+    border-radius: 25px;
     overflow: hidden;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    box-shadow: 5px 5px 2px 0px rgba(0, 0, 0, 0.71);
+    box-shadow: 5px 5px 2px 0px rgba(0, 0, 0, 0.747);
 }
 
 .content .slide img {
@@ -53,12 +53,12 @@ input {
 
 .slides {
     display: flex;
-    width: 250%;
-    height: 50%;
+    width: 400%;
+    height: 100%;
 }
 
 .slide {
-    width: 20%;
+    width: 25%;
     transition: .6s;
 }
 
@@ -67,13 +67,13 @@ input {
 } 
 
 #slide2:checked ~ .s1 {
-    margin-left: -20%;
+    margin-left: -25%;
 } 
 
 #slide3:checked ~ .s1 {
-    margin-left: -40%;
+    margin-left: -50%;
 } 
 
 #slide4:checked ~ .s1 {
-    margin-left: -60%;
+    margin-left: -75%;
 } 
