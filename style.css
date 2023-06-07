@@ -28,17 +28,17 @@ body {
 .navigation {
     position: absolute;
     bottom: 160px;
-    left: 50%;
+    left: 40%;
     display: flex;
 }
 
 .bar {
 
-    width: 15px;
-    height: 15px;
+    width: 9px;
+    height: 9px;
     border: 2px solid white;
-    margin: 6px;
-    border-radius: 15px;
+    margin: 4px;
+    border-radius: 9px;
     cursor: pointer;
     transform: .5s ease;
 
