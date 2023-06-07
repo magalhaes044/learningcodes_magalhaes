@@ -43,10 +43,12 @@ body {
     transform: .5s ease;
 
 }
-
-.bar:hover {
+.bar:hover ::before {
+    background-color: transparent;
+}
+.bar:hover ::after {
     background-color: white;
-    transition-delay: 1s;
+    transition: 1s;
 }
 
 input {
