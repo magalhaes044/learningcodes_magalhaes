@@ -1,10 +1,10 @@
-let contador = 1;
+let counter = 1;
 
 setInterval( function(){
-    document.getElementById('slide' + contador).checked = true;
-    contador++;
+    document.getElementById('slide' + counter).checked = true;
+    counter++;
 
     if(counter > 4 ) {
-        contador = 1;
+        counter = 1;
     }
 }, 4000 );

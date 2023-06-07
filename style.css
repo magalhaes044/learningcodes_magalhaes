@@ -28,7 +28,7 @@ body {
 .navigation {
     position: absolute;
     bottom: 160px;
-    left: 50%;
+    left: 60%;
     display: flex;
 }
 
