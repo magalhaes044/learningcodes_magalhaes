@@ -28,7 +28,7 @@ body {
 .navigation {
     position: absolute;
     bottom: 160px;
-    left: 40%;
+    left: 50%;
     display: flex;
 }
 
@@ -46,6 +46,7 @@ body {
 
 .bar:hover {
     background-color: white;
+    transition-delay: 1s;
 }
 
 input {
