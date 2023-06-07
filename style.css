@@ -5,6 +5,7 @@ body {
     height: 100vh;
     width: 100vw;
     background: linear-gradient(72deg, #dd371a 35%, #fffacd, #dd371a 99%); ;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .content {
@@ -104,6 +105,10 @@ ul {
 }
 
 a {
-    color: #b21d06;
+    color: #b21d06;;
     text-decoration: none;
+}
+
+.center {
+    text-align: center;
 }
