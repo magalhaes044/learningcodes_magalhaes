@@ -17,7 +17,7 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    box-shadow: 2px 2px 1px 0px rgba(0, 0, 0, 0.747);
+    box-shadow: 9px 9px 3px 0px rgba(0, 0, 0, 0.747);
 }
 
 .content .slide img {
@@ -27,9 +27,9 @@ body {
 
 .navigation {
     position: absolute;
-    display: flex;
     bottom: 160px;
-    left: 850px;
+    left: 50%;
+    display: flex;
 }
 
 .bar {
@@ -106,6 +106,7 @@ ul {
 a {
     color: #b21d06;;
     text-decoration: none;
+    font-family: sans-serif;
 }
 
 .center {
