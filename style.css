@@ -78,3 +78,32 @@ input {
 #slide4:checked ~ .s1 {
     margin-left: -75%;
 } 
+
+.container {
+    padding: 0px 50px;
+}
+
+nav a {
+    font-size: 20px;
+}
+
+nav a:hover {
+    color: #ffffff;
+}
+
+h1 {
+    color: #b21d06;
+}
+
+ul {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    align-items: center;
+    padding: 16px;
+}
+
+a {
+    color: #b21d06;
+    text-decoration: none;
+}
