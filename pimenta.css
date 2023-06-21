@@ -28,7 +28,7 @@ body {
 .navigation {
     position: absolute;
     bottom: 160px;
-    left: 60%;
+    left: 50%;
     display: flex;
 }
 
@@ -44,7 +44,6 @@ body {
 
 }
 
-}
 .bar:hover {
     background-color: white;
 }
