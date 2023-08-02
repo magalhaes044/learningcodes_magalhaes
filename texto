@@ -5,10 +5,10 @@ Para começar, eu vou te mostrar um código básico de HTML que define a estrutu
 O código HTML é o seguinte:
 
 ```html
-<html>
+<htmlj
 <head>
     <title>Receitas com Pimenta Biquinho</title>
-    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="">
 </head>
 <body>
     <h1>Receitas com Pimenta Biquinho</h1>
