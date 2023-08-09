@@ -1,30 +1,45 @@
 <html>
 <head>
     <style>
+        /* Definir variáveis CSS */
+        :root {
+            --menu-bg-color: #333; /* Cor de fundo do menu */
+            --menu-item-color: white; /* Cor dos itens do menu */
+            --menu-item-font: Arial, sans-serif; /* Fonte dos itens do menu */
+            --menu-item-size: 18px; /* Tamanho dos itens do menu */
+            --menu-button-size: 50px; /* Tamanho do botão de recolher */
+            --menu-icon-size: 30px; /* Tamanho do ícone de recolher */
+            --menu-icon-color: white; /* Cor do ícone de recolher */
+            --menu-shadow-color: #222; /* Cor da sombra do menu */
+            --menu-border-color: #444; /* Cor da borda do menu */
+            --menu-gradient-color: #555; /* Cor do gradiente do menu */
+        }
+
         /* Estilo do menu */
         .menu {
             width: 100%;
-            height: 50px;
-            background-color: #333;
+            height: var(--menu-button-size); /* Usar a variável CSS */
+            background-color: var(--menu-bg-color); /* Usar a variável CSS */
             display: flex;
             align-items: center;
             justify-content: space-between;
+            box-shadow: 0 2px 4px var(--menu-shadow-color); /* Usar a variável CSS e adicionar uma sombra */
         }
 
         /* Estilo dos itens do menu */
         .menu-item {
-            color: white;
-            font-family: Arial, sans-serif;
-            font-size: 18px;
+            color: var(--menu-item-color); /* Usar a variável CSS */
+            font-family: var(--menu-item-font); /* Usar a variável CSS */
+            font-size: var(--menu-item-size); /* Usar a variável CSS */
             padding: 10px;
             cursor: pointer;
         }
 
         /* Estilo do botão de recolher */
         .menu-button {
-            width: 50px;
-            height: 50px;
-            background-color: #333;
+            width: var(--menu-button-size); /* Usar a variável CSS */
+            height: var(--menu-button-size); /* Usar a variável CSS */
+            background-color: var(--menu-bg-color); /* Usar a variável CSS */
             border: none;
             outline: none;
             cursor: pointer;
@@ -32,9 +47,9 @@
 
         /* Estilo do ícone de recolher */
         .menu-icon {
-            width: 30px;
-            height: 30px;
-            fill: white;
+            width: var(--menu-icon-size); /* Usar a variável CSS */
+            height: var(--menu-icon-size); /* Usar a variável CSS */
+            fill: var(--menu-icon-color); /* Usar a variável CSS */
         }
 
         /* Estilo da animação de recolher */
@@ -43,13 +58,25 @@
                 width: 100%;
             }
             to {
-                width: 50px;
+                width: var(--menu-button-size); /* Usar a variável CSS */
             }
         }
 
         /* Estilo do menu recolhido */
         .menu-collapsed {
             animation: slide 0.5s ease-in-out forwards;
+        }
+
+        /* Estilo da borda e gradiente do menu recolhido usando pseudo-elementos CSS*/
+        .menu-collapsed::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            border-right: 2px solid var(--menu-border-color); /* Usar a variável CSS e adicionar uma borda direita*/
+            background-image: linear-gradient(to right, transparent, var(--menu-gradient-color)); /* Usar a variável CSS e adicionar um gradiente*/
         }
     </style>
 </head>
