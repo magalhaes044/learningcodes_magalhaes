@@ -1,0 +1,101 @@
+<html>
+<head>
+    <style>
+        /* Estilo do menu */
+        .menu {
+            width: 100%;
+            height: 50px;
+            background-color: #333;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        /* Estilo dos itens do menu */
+        .menu-item {
+            color: white;
+            font-family: Arial, sans-serif;
+            font-size: 18px;
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        /* Estilo do botão de recolher */
+        .menu-button {
+            width: 50px;
+            height: 50px;
+            background-color: #333;
+            border: none;
+            outline: none;
+            cursor: pointer;
+        }
+
+        /* Estilo do ícone de recolher */
+        .menu-icon {
+            width: 30px;
+            height: 30px;
+            fill: white;
+        }
+
+        /* Estilo da animação de recolher */
+        @keyframes slide {
+            from {
+                width: 100%;
+            }
+            to {
+                width: 50px;
+            }
+        }
+
+        /* Estilo do menu recolhido */
+        .menu-collapsed {
+            animation: slide 0.5s ease-in-out forwards;
+        }
+    </style>
+</head>
+<body>
+    <!-- Menu -->
+    <div class="menu" id="menu">
+        <!-- Itens do menu -->
+        <div class="menu-item">Home</div>
+        <div class="menu-item">Sobre</div>
+        <div class="menu-item">Serviços</div>
+        <div class="menu-item">Contato</div>
+        <!-- Botão de recolher -->
+        <button class="menu-button" id="menu-button">
+            <!-- Ícone de recolher -->
+            <svg class="menu-icon" id="menu-icon" viewBox="0 0 24 24">
+                <path d="M3,18H21V16H3V18Z"/>
+                <path d="M3,13H21V11H3V13Z"/>
+                <path d="M3,6V8H21V6H3Z"/>
+            </svg>
+        </button>
+    </div>
+    <!-- Script -->
+    <script>
+        // Pegar os elementos do menu, botão e ícone
+        var menu = document.getElementById("menu");
+        var button = document.getElementById("menu-button");
+        var icon = document.getElementById("menu-icon");
+
+        // Adicionar um evento de clique no botão
+        button.addEventListener("click", function() {
+            // Verificar se o menu está recolhido ou não
+            var collapsed = menu.classList.contains("menu-collapsed");
+            
+            // Se o menu estiver recolhido, remover a classe e mudar o ícone para o de três linhas
+            if (collapsed) {
+                menu.classList.remove("menu-collapsed");
+                icon.innerHTML = '<path d="M3,18H21V16H3V18Z"/><path d="M3,13H21V11H3V13Z"/><path d="M3,6V8H21V6H3Z"/>';
+            }
+            
+            // Se o menu não estiver recolhido, adicionar a classe e mudar o ícone para o de uma seta
+            else {
+                menu.classList.add("menu-collapsed");
+                icon.innerHTML = '<path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"/>';
+            }
+            
+        });
+    </script>
+</body>
+</html>
